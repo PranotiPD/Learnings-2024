@@ -29,13 +29,13 @@ Docker and VM are both virtualization tools now questions come
 ## What parts of OS do they virtualize?
 
 ### Docker
-**Docker virtaulizes application layer**
+**Docker virtualizes application layer**
 
-Docker contains OS application layer
+Docker contains OS application layer.
 
-services and apps installed on top of that layer(eg JRE)
+services and apps installed on top of that layer(eg JRE).
 
-It uses kernel of the host as it doesn't have its own kernel
+It uses kernel of the host as it doesn't have its own kernel.
 
 
 ### Virtual Machine
@@ -43,18 +43,18 @@ It uses kernel of the host as it doesn't have its own kernel
 It has application layer as well as kernel, so it virtualizes complete OS
 
 
-     Containerized Apps                            VM           VM
-
-      App A      App B                            App A        App B          
-
-           Docker                                Guest OS     Guest OS
-
+    | Containerized Apps |                     |    VM     | |    VM     |
+    |                    |                     |           | |           |
+    |  App A      App B  |                     |   App A   | |   App B   |         
+    |                    |                     |           | |           |
+    |       Docker       |                     |  Guest OS | |  Guest OS |
+                                               
            Host OS                                      Host OS
 
         Physical Machine                            Physical Machine
 
 
-### What effects these differences has?
+### What effects these differences have?
 
                                     Docker                           VM
 
@@ -65,7 +65,7 @@ It has application layer as well as kernel, so it virtualizes complete OS
           compatibility |  only with Linux distros          |   with all OS
 
 
-***Most containers are linux based and docker originally was built for Linux OS later docker made and update developed docker desktop for Windows and Mac which made it possible to run linux based containers on Windows and MacOS***
+***Most containers are linux based and docker originally was built for Linux OS later docker made and update, developed docker desktop for Windows and Mac which made it possible to run linux based containers on Windows and MacOS***
 
 ***Docker desktop uses a hypervisor layer with a lightweight linux distribution***
 
