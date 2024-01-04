@@ -58,11 +58,11 @@ It has application layer as well as kernel, so it virtualizes complete OS
 
                                     Docker                           VM
 
-          images        |  Couple of **MB**  VM images      |   couple of **GB**
+          images        |  Couple of MBs                    |   couple of GBs
                         |                                   |
-          containers    |  takes **seconds** to start  VM   |   takes **minutes** to start
+          containers    |  takes seconds to start           |   takes minutes to start
                         |                                   |
-          compatibility |  **only with** Linux distros      |   **with all** OS
+          compatibility |  only with Linux distros          |   with all OS
 
 
 ***Most containers are linux based and docker originally was built for Linux OS later docker made and update developed docker desktop for Windows and Mac which made it possible to run linux based containers on Windows and MacOS***
